@@ -1,0 +1,50 @@
+{
+    "name": "kayschima/tischtennis-live-php",
+    "description": "Dies ist ein ein PHP-Wrapper für die Tischtennis Live API.",
+    "keywords": [
+        "kayschima",
+        "tischtennis-live-php"
+    ],
+    "homepage": "https://github.com/kayschima/tischtennis-live-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kay Markschies",
+            "email": "kayschima@web.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-simplexml": "*"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.20",
+        "laravel/pint": "^1.0",
+        "spatie/ray": "^1.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kayschima\\TischtennisLive\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kayschima\\TischtennisLive\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+            "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
